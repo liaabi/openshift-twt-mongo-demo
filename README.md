@@ -8,10 +8,9 @@ Quickstart
 
 1) Create an account at http://openshift.redhat.com/
 
-2) Create a python application and attach mongodb to it:
+2) Create a python application with mongodb:
 
-    rhc app create -a twt -t python-2.6
-    rhc cartridge add -a twt -c mongodb-2
+    rhc app create twt python-2.6 mongodb-2
 
 3) Add this upstream repo
 
