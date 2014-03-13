@@ -1,12 +1,12 @@
 OpenShift - Twt Mongo Demo
 
-This repository is designed to be used with http://openshift.redhat.com/
+This repository is designed to be used with https://www.openshift.com
 applications.  To use, just follow the quickstart below.
 
 Quickstart
 ==========
 
-1) Create an account at http://openshift.redhat.com/
+1) Create an account at https://www.openshift.com
 
 2) Create a python application with mongodb:
 
