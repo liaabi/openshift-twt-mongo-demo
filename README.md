@@ -15,7 +15,7 @@ Quickstart
 3) Add this upstream repo
 
     cd twt
-    git remote add upstream -m master git://github.com/openshift/openshift-twt-mongo-demo.git
+    git remote add upstream -m master git://github.com/openshift-quickstart/openshift-twt-mongo-demo.git
     git pull -s recursive -X theirs upstream master
 
 4) Then push the repo upstream
