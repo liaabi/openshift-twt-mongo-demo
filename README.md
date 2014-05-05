@@ -1,4 +1,4 @@
-OpenShift - Twt Mongo Demo
+OpenShift - Twt Mongo Demo for MongoDB RS
 
 This repository is designed to be used with https://www.openshift.com
 applications.  To use, just follow the quickstart below.
@@ -8,14 +8,14 @@ Quickstart
 
 1) Create an account at https://www.openshift.com
 
-2) Create a python application with mongodb:
+2) Create a python application with mongodb-ha:
 
-    rhc app create twt python-2.6 mongodb-2
+    rhc app create twt python-2.7 mongodb-ha
 
 3) Add this upstream repo
 
     cd twt
-    git remote add upstream -m master git://github.com/openshift-quickstart/openshift-twt-mongo-demo.git
+    git remote add upstream -m master git://github.com/liaabi/openshift-twt-mongo-demo.git
     git pull -s recursive -X theirs upstream master
 
 4) Then push the repo upstream
