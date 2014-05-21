@@ -12,7 +12,7 @@ mongo_con = pymongo.ReplicaSetConnection("os.environ['OPENSHIFT_MONGODB_DB_HOST1
                                         os.environ['OPENSHIFT_MONGODB_DB_HOST2']:os.environ['OPENSHIFT_MONGODB_DB_PORT2'],
                                         os.environ['OPENSHIFT_MONGODB_DB_HOST3']:os.environ['OPENSHIFT_MONGODB_DB_PORT3']")
 
-mongo_db = mongo_con[os.environ['OPENSHIFT_APP_NAME']]
+mongo_db = mongo_con(os.environ['OPENSHIFT_APP_NAME'])
 mongo_db.authenticate(os.environ['OPENSHIFT_MONGODB_DB_USERNAME'],
                       os.environ['OPENSHIFT_MONGODB_DB_PASSWORD'])
 
