@@ -8,8 +8,8 @@ import pymongo
 
 bottle.debug(True)
 
-mongo_con = pymongo.ReplicaSetConnection("os.environ['OPENSHIFT_MONGODB_DB_HOST1']:os.environ['OPENSHIFT_MONGODB_DB_PORT1'],
-                                        os.environ['OPENSHIFT_MONGODB_DB_HOST2']:os.environ['OPENSHIFT_MONGODB_DB_PORT2'],
+mongo_con = pymongo.ReplicaSetConnection("os.environ['OPENSHIFT_MONGODB_DB_HOST1']:os.environ['OPENSHIFT_MONGODB_DB_PORT1'], \
+                                        os.environ['OPENSHIFT_MONGODB_DB_HOST2']:os.environ['OPENSHIFT_MONGODB_DB_PORT2'], \
                                         os.environ['OPENSHIFT_MONGODB_DB_HOST3']:os.environ['OPENSHIFT_MONGODB_DB_PORT3']")
 
 mongo_db = mongo_con(os.environ['OPENSHIFT_APP_NAME'])
