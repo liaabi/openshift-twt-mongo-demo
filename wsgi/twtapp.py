@@ -15,9 +15,6 @@ connString = os.environ['OPENSHIFT_MONGODB_HA_DB_HOST1'] + ":" + os.environ['OPE
              os.environ['OPENSHIFT_MONGODB_HA_DB_HOST3'] + ":" + os.environ['OPENSHIFT_MONGODB_HA_DB_PORT3']
 mongo_client = pymongo.MongoReplicaSetClient(connString, replicaSet='rs0') 
 
-#os.environ['OPENSHIFT_MONGODB_HA_DB_HOST1'] + ":" + os.environ['OPENSHIFT_MONGODB_HA_DB_PORT1'] + \
-#                                          os.environ['OPENSHIFT_MONGODB_HA_DB_HOST2'] + ":" + os.environ['OPENSHIFT_MONGODB_HA_DB_PORT2'] + \
-#                                          os.environ['OPENSHIFT_MONGODB_HA_DB_HOST3'] + ":" + os.environ['OPENSHIFT_MONGODB_HA_DB_PORT3'], replicaSet='rs0')
 
 mongo_db = mongo_client [os.environ['OPENSHIFT_APP_NAME']]
 mongo_db.authenticate(os.environ['OPENSHIFT_MONGODB_HA_DB_USERNAME'],
